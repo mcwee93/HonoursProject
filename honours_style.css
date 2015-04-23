@@ -1,0 +1,91 @@
+body{
+}
+
+/* Honours Project Login Page Styling */
+
+#honours-container{
+	width: 50%;
+	border-radius: 10px;
+	margin: 0 auto 0 auto;
+}
+#honours-main-body{
+
+}
+.honours-login-form{
+	padding:15px;
+	border-radius: 10px;
+	margin-top:10%;
+	background-color:#e6e6e6;
+	-webkit-box-shadow: 0px 3px 13px 3px rgba(51,51,51,0.5);
+	-moz-box-shadow: 0px 3px 13px 3px rgba(51,51,51,0.5);
+	box-shadow: 0px 3px 13px 3px rgba(51,51,51,0.5);
+}
+
+#honours-form-container{
+	width:67%;
+	margin: 0 auto 0 auto;
+}
+
+.honours-login-form input[type=text],.honours-login-form input[type=password]{
+	height:35px;
+	padding-left:10px;
+}
+
+.honours-login-form input[type=submit]{
+	background-color:white;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #999999;
+	color: #999999;
+	cursor: pointer;
+	height:40px;
+}
+.honours-login-form input[type=submit]:hover{
+	background-color:white;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #999999;
+	color: #000000;
+	cursor: pointer;
+}
+#honours-register-button a{
+	float:right;
+	text-decoration:none;
+	font-family:arial;
+	color:#999999;
+}
+
+/* Honours Project Register Page Styling */
+
+#honours-register-form-container{
+	width:29%;
+	margin: 0 auto 0 auto;
+}
+
+/* Honours Project Index Page Styling */
+
+#honours-index-list-container{
+	width:50%;
+	margin: 0 auto 0 auto;
+}
+.honours-index-li{
+	text-decoration:none;
+	padding:5px;
+	border:thin solid #999999;
+	list-style:none;
+	height:35px;
+	background-color: #ffffff;
+}
+.honours-index-li a{
+	text-decoration:none;
+	color:#999999;
+}
+.honours-index-li a:visited{
+	text-decoration:none;
+	color:#999999;
+}
+.honours-index-li a:hover{
+	text-decoration:none;
+	color:#000000;
+}
+

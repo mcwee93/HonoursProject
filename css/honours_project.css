@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header_bar{
+	height:150px;
+	background-image:url(../images/header.jpg);
+	margin-bottom:40px;
+}
+
+#bar_1{
+	height:300px;
+	background-image:url(../images/bar1.jpg);
+	margin-bottom:40px;
+	border-radius:15px;
+	box-shadow: -5px 5px 20px #888888;
+}
+
+#bar_2{
+	height:300px;
+	background-image:url(../images/bar2.jpg);
+	margin-bottom:40px;
+	border-radius:15px;
+	box-shadow: -5px 5px 20px #888888;
+}
+
+#bar_3{
+	height:300px;
+	background-image:url(../images/bar3.jpg);
+	margin-bottom:40px;
+	border-radius:15px;
+	box-shadow: -5px 5px 20px #888888;
+}
+
+#bar_4{
+	height:300px;
+	background-image:url(../images/bar4.jpg);
+	margin-bottom:40px;
+	border-radius:15px;
+	box-shadow: -5px 5px 20px #888888;
+}
+
+#bar_5{
+	height:300px;
+	background-image:url(../images/bar5.jpg);
+	margin-bottom:40px;
+	border-radius:15px;
+	box-shadow: -5px 5px 20px #888888;
+}
+
+#bar_6{
+	height:300px;
+	background-color:green;
+	margin-bottom:40px;
+}
+
+#bar_7{
+	height:auto;
+	background-image:url(../images/bar1.jpg);
+	margin-bottom:40px;
+	border-radius:15px;
+	box-shadow: -5px 5px 20px #888888;
+}
+
+#honours-form-container{
+	width:60%;
+	margin-left:20%;
+	margin-top:10%;
+}
+
+#honours-register-button{
+	margin-left:27%;
+}
+
+#bar_inside{
+	background-color:#f4f3f3;
+	opacity:0.9;
+	width:90%;
+	height:90%;
+	border-radius:10px;	
+	margin-top:5%;
+	margin-left:5%;
+}
+
+#inside_bar{
+	padding:2%;	
+}
+
+#bar_inside1{
+	background-color:#f4f3f3;
+	opacity:0.9;
+	width:92.5%;
+	height:92.5%;
+	border-radius:10px;	
+	margin-top:1.2%;
+	margin-left:3.5%;
+}
+
+#inside_bar1{
+	padding:2%;	
+}
+#bar_inside2{
+	background-color:#f4f3f3;
+	opacity:0.9;
+	width:92.5%;
+	height:auto;
+	border-radius:10px;	
+	margin-top:1.2%;
+	margin-left:3.5%;
+	margin-bottom:1.2%;
+}
+
+#inside_bar2{
+	padding:2%;	
+}
+.honours-login-form{
+width:250px;
+margin: 0 auto 0 auto;
+}
+
+#bar_inside3{
+	background-color:#f4f3f3;
+	opacity:0.9;
+	width:92.5%;
+	height:300px;
+	border-radius:10px;	
+	margin-top:1.2%;
+	margin-left:3.5%;
+	margin-bottom:1.2%;
+}
+
+#inside_bar3{
+	padding:2%;	
+}

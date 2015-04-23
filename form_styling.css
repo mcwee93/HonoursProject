@@ -1,0 +1,277 @@
+.honours-form input[type=text],.honours-form input[type=password],
+.honours-form input[type=email],.honours-form input[type=url],
+.honours-form input[type=date],.honours-form input[type=month],
+.honours-form input[type=time],.honours-form input[type=datetime],
+.honours-form input[type=datetime-local],.honours-form input[type=week],
+.honours-form input[type=number],.honours-form input[type=search],
+.honours-form input[type=tel],.honours-form input[type=color],.honours-form select,
+.honours-form textarea{	
+	padding:.5em .6em;
+	display:inline-block;
+	border:1px solid #ccc;
+	box-shadow:inset 0 1px 3px #ddd;
+	border-radius:4px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+		
+.honours-form input:not([type]){
+	padding:.5em .6em;
+	display:inline-block;
+	border:1px solid #ccc;
+	box-shadow:inset 0 1px 3px #ddd;
+	border-radius:4px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+
+.honours-form input[type=color]{
+	padding:.2em .5em
+}
+
+.honours-form input[type=text]:focus,.honours-form input[type=password]:focus,
+.honours-form input[type=email]:focus,.honours-form input[type=url]:focus,
+.honours-form input[type=date]:focus,.honours-form input[type=month]:focus,
+.honours-form input[type=time]:focus,.honours-form input[type=datetime]:focus,
+.honours-form input[type=datetime-local]:focus,.honours-form input[type=week]:focus,
+.honours-form input[type=number]:focus,.honours-form input[type=search]:focus,
+.honours-form input[type=tel]:focus,.honours-form input[type=color]:focus,
+.honours-form select:focus,.honours-form textarea:focus{
+	outline:0;outline:thin dotted \9;
+	border-color:#129FEA
+}
+
+.honours-form input:not([type]):focus{
+	outline:0;outline:thin dotted \9;
+	border-color:#129FEA
+}
+
+.honours-form input[type=file]:focus,.honours-form input[type=radio]:focus,
+.honours-form input[type=checkbox]:focus{
+	outline:thin dotted #333;
+	outline:1px auto #129FEA
+}
+
+.honours-form .honours-checkbox,.honours-form .honours-radio{
+	margin:.5em 0;
+	display:block
+}
+
+.honours-form input[type=text][disabled],.honours-form input[type=password][disabled],
+.honours-form input[type=email][disabled],.honours-form input[type=url][disabled],
+.honours-form input[type=date][disabled],.honours-form input[type=month][disabled],
+.honours-form input[type=time][disabled],.honours-form input[type=datetime][disabled],
+.honours-form input[type=datetime-local][disabled],.honours-form input[type=week][disabled],
+.honours-form input[type=number][disabled],.honours-form input[type=search][disabled],
+.honours-form input[type=tel][disabled],.honours-form input[type=color][disabled],
+.honours-form select[disabled],.honours-form textarea[disabled]{
+	cursor:not-allowed;
+	background-color:#eaeded;
+	color:#cad2d3
+}
+
+.honours-form input:not([type])[disabled]{
+	cursor:not-allowed;
+	background-color:#eaeded;
+	color:#cad2d3
+}
+
+.honours-form input[readonly],.honours-form select[readonly],
+.honours-form textarea[readonly]{
+	background:#eee;
+	color:#777;
+	border-color:#ccc
+}
+
+.honours-form input:focus:invalid,.honours-form textarea:focus:invalid,
+.honours-form select:focus:invalid{
+	color:#b94a48;
+	border-color:#ee5f5b
+}
+
+.honours-form input:focus:invalid:focus,.honours-form textarea:focus:invalid:focus,
+.honours-form select:focus:invalid:focus{border-color:#e9322d}.honours-form input[type=file]:focus:invalid:focus,
+.honours-form input[type=radio]:focus:invalid:focus,.honours-form input[type=checkbox]:focus:invalid:focus{
+	outline-color:#e9322d
+}
+
+.honours-form select{
+	border:1px solid #ccc;
+	background-color:#fff
+}
+
+.honours-form select[multiple]{height:auto}.honours-form label{
+	margin:.5em 0 .2em
+}
+
+.honours-form fieldset{
+	margin:0;
+	padding:.35em 0 .75em;
+	border:0
+}
+
+.honours-form legend{
+	display:block;
+	width:100%;
+	padding:.3em 0;
+	margin-bottom:.3em;
+	color:#333;
+	border-bottom:1px solid #e5e5e5
+}
+
+.honours-form-stacked input[type=text],.honours-form-stacked input[type=password],
+.honours-form-stacked input[type=email],.honours-form-stacked input[type=url],
+.honours-form-stacked input[type=date],.honours-form-stacked input[type=month],
+.honours-form-stacked input[type=time],.honours-form-stacked input[type=datetime],
+.honours-form-stacked input[type=datetime-local],.honours-form-stacked input[type=week],
+.honours-form-stacked input[type=number],.honours-form-stacked input[type=search],
+.honours-form-stacked input[type=tel],.honours-form-stacked input[type=color],
+.honours-form-stacked select,.honours-form-stacked label,.honours-form-stacked textarea{
+	display:block;
+	margin:.25em 0
+}
+
+.honours-form-stacked input:not([type]){
+	display:block;
+	margin:.25em 0
+}
+
+.honours-form-aligned input,.honours-form-aligned textarea,.honours-form-aligned select,
+.honours-form-aligned .honours-help-inline,.honours-form-message-inline{
+	display:inline-block;*display:inline;*zoom:1;
+	vertical-align:middle
+}
+
+.honours-form-aligned textarea{
+	vertical-align:top
+}
+
+.honours-form-aligned .honours-control-group{
+	margin-bottom:.5em
+}
+
+.honours-form-aligned .honours-control-group label{
+	text-align:right;
+	display:inline-block;
+	vertical-align:middle;
+	width:10em;
+	margin:0 1em 0 0
+}
+
+.honours-form-aligned .honours-controls{
+	margin:1.5em 0 0 10em
+}
+
+.honours-form input.honours-input-rounded,.honours-form .honours-input-rounded{
+	border-radius:2em;
+	padding:.5em 1em
+}
+
+.honours-form .honours-group fieldset{
+	margin-bottom:10px
+}
+
+.honours-form .honours-group input{
+	display:block;
+	padding:10px;
+	margin:0;
+	border-radius:0;
+	position:relative;
+	top:-1px
+}
+
+.honours-form .honours-group input:focus{
+	z-index:2
+}
+
+.honours-form .honours-group input:first-child{
+	top:1px;
+	border-radius:4px 4px 0 0
+}
+
+.honours-form .honours-group input:last-child{
+	top:-2px;
+	border-radius:0 0 4px 4px
+}
+
+.honours-form .honours-group button{
+	margin:.35em 0
+}
+
+.honours-form .honours-input-1{
+	width:100%
+}
+
+.honours-form .honours-input-2-3{
+	width:66%
+}
+
+.honours-form .honours-input-1-2{
+	width:50%
+}
+
+.honours-form .honours-input-1-3{
+width:33%
+}
+
+.honours-form .honours-input-1-4{
+	width:25%
+}
+
+.honours-form .honours-help-inline,.honours-form-message-inline{
+	display:inline-block;
+	padding-left:.3em;
+	color:#666;
+	vertical-align:middle;
+	font-size:.875em
+}
+
+.honours-form-message{
+	display:block;
+	color:#666;
+	font-size:.875em
+}
+
+@media only screen and (max-width :480px){
+.honours-form button[type=submit]{
+	margin:.7em 0 0
+}
+
+.honours-form input:not([type]),.honours-form input[type=text],
+.honours-form input[type=password],.honours-form input[type=email],
+.honours-form input[type=url],.honours-form input[type=date],
+.honours-form input[type=month],.honours-form input[type=time],
+.honours-form input[type=datetime],.honours-form input[type=datetime-local],
+.honours-form input[type=week],.honours-form input[type=number],
+.honours-form input[type=search],.honours-form input[type=tel],
+.honours-form input[type=color],.honours-form label{
+	margin-bottom:.3em;
+	display:block
+}
+
+.honours-group input:not([type]),.honours-group input[type=text],
+.honours-group input[type=password],.honours-group input[type=email],
+.honours-group input[type=url],.honours-group input[type=date],
+.honours-group input[type=month],.honours-group input[type=time],
+.honours-group input[type=datetime],.honours-group input[type=datetime-local],
+.honours-group input[type=week],.honours-group input[type=number],
+.honours-group input[type=search],.honours-group input[type=tel],
+.honours-group input[type=color]{margin-bottom:0}.honours-form-aligned .honours-control-group label{
+	margin-bottom:.3em;
+	text-align:left;
+	display:block;
+	width:100%
+}
+
+.honours-form-aligned .honours-controls{
+	margin:1.5em 0 0
+}
+
+.honours-form .honours-help-inline,.honours-form-message-inline,.honours-form-message{
+	display:block;
+	font-size:.75em;
+	padding:.2em 0 .8em
+}
+}
