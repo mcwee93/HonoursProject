@@ -64,7 +64,7 @@ if(isset($_GET['user']) && ($_GET['user']=='logout')){
               </tr>
               <tr>
                 <td> Your Phone No: </td>
-                <td><input type="text" name="num"/></td>
+                <td><input type="text" name="number"/></td>
               </tr>
               <tr>
                 <td> Your E-mail: </td>

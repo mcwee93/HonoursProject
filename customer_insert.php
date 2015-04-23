@@ -28,7 +28,7 @@ $message
 ";
 $message2 = "
 
-Thank you for getting in touch $name, our team at Gold! will work on getting back to you as soon as possible. Below is a copy of your message.
+Thank you for getting in touch $name, a member of staff will work on getting back to you as soon as possible. Below is a copy of your message.
 
 Name: $name
 E-mail: $email
@@ -42,7 +42,7 @@ mail($adminmail, $subject, $message1);
 mail($email, $subject, $message2);
 
 /* Redirect visitor to the thank you page */
-header('Location: success.php');
+header('Location: success1.php');
 exit();
 
 /* Functions we used */
