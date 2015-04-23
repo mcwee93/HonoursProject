@@ -80,7 +80,7 @@ alert( "Enter email." );
 return false;
 }
 }
-	</script> 
+	</script>
 	</head>
 	<body>
 
@@ -92,11 +92,11 @@ return false;
   </div>
     </div>
 <div class="container">
-      <div class="row">
-    <div id="bar_7" class="12 columns">
-          <div id="bar_inside2">
-        <div id="inside_bar2">
-		<?php 
+<div class="row">
+      <div id="bar_7" class="12 columns">
+    <div id="bar_inside2">
+          <div id="inside_bar2">
+        <?php 
 if($_POST){
     try{
         $query = "update users
@@ -142,63 +142,56 @@ if($action=='deleted'){
     echo "<div>Record was deleted.</div>";
 }
 ?>
-<div id="honours-container">
-            <div id="honours-main-body">
-					<form class="honours-login-form" method="POST" action="#"  id="register_form" name="reg">
-					<div id="honours-index-list-container">
-						<h1><?php $user->get_username($id);?> profile</h1>
-    <table>
-        <tr>
-            <td>name</td>
-		</tr>
-        <tr>	
-            <td><input type='text' name='name' value='<?php echo $name;  ?>' /></td>
-        </tr>
-        <tr>
-            <td>username</td>
-		</tr>
-        <tr>	
-            <td><input type='text' name='username' value='<?php echo $username;  ?>' /></td>
-        </tr>
-        <tr>
-            <td>email</td>
-		</tr>
-        <tr>	
-            <td><input type='text' name='email'  value='<?php echo $email;  ?>' /></td>
-        </tr>
-        <tr>
-            <td>Password</td>
-		</tr>
-        <tr>	
-            <td><input type='password' name='password'  value='<?php echo $password;  ?>' /></td>
-        </td>
-		<tr>
-            <td>
-
-                <input type='hidden' name='id' value='<?php echo $id ?>' /> 
- 
-                <input type='submit' value='Edit' />
-            </td>
-        </tr>
-    </table>
-	<div><a href="index.php">Home</a></div><br>
-<div><a href="?user=logout">log out</a></div>  
-</form>
-
-            </div><br>
-<br>
-
-            <div id="footer"></div>
-				
-				
-				
+        <div id="honours-container">
+              <div id="honours-main-body">
+            <form class="honours-login-form" method="POST" action="#"  id="register_form" name="reg">
+                  <div id="honours-index-list-container">
+                  <h1>
+                <?php $user->get_username($id);?>
+                profile</h1>
+                  <table>
+                <tr>
+                      <td>name</td>
+                    </tr>
+                <tr>
+                      <td><input type='text' name='name' value='<?php echo $name;  ?>' /></td>
+                    </tr>
+                <tr>
+                      <td>username</td>
+                    </tr>
+                <tr>
+                      <td><input type='text' name='username' value='<?php echo $username;  ?>' /></td>
+                    </tr>
+                <tr>
+                      <td>email</td>
+                    </tr>
+                <tr>
+                      <td><input type='text' name='email'  value='<?php echo $email;  ?>' /></td>
+                    </tr>
+                <tr>
+                      <td>Password</td>
+                    </tr>
+                <tr>
+                      <td><input type='password' name='password'  value='<?php echo $password;  ?>' /></td>
+                        </td>
+                    <tr>
+                      <td><input type='hidden' name='id' value='<?php echo $id ?>' />
+                        <input type='submit' value='Edit' /></td>
+                    </tr>
+              </table>
+                  <div><a href="index.php">Home</a></div>
+                  <br>
+                  <div><a href="?user=logout">log out</a></div>
+                </form>
+          </div>
+              <br>
+              <br>
+              <div id="footer"></div>
             </div>
       </div>
         </div>
-
-    
+  </div>
     </div>
-</div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

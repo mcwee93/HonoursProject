@@ -69,41 +69,28 @@ return false;
 <div class="container">
       <div class="row">
     <div id="bar_7" class="eight columns">
-          <div id="bar_inside3">
-        <div id="inside_bar3">
-              <h1>
-            <?php $user->get_username($id);?>
-            profile</h1>
+          <div id="bar_inside2">
+        <div id="inside_bar2">
               <?php
-	$query = "SELECT id, name, username, email, password FROM users WHERE id = ($id)";
-	$stmt = $connection->prepare( $query );
-	$stmt->execute();
-	$num = $stmt->rowCount();
-	if($num>0){
-		echo "<table border='2'>";
-			echo "<tr>";
-				echo "<th>Name</th>";
-				echo "<th>Username</th>";
-				echo "<th>Email</th>";
-				echo "<th></th>";
-			echo "</tr>";
-			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+	$query = "SELECT id, name, description, lrg_description, staffMember, price FROM facilities WHERE id = 4";
+	$honours = $connection->prepare( $query );
+		$honours->execute();
+		$num = $honours->rowCount();
+		if($num>0){
+			while ($row = $honours->fetch(PDO::FETCH_ASSOC)){
 				extract($row);
-				echo "<tr>";
-					echo "<td>{$name}</td>";
-					echo "<td>{$username}</td>";
-					echo "<td>{$email}</td>";
-				echo "<td>";
-                    //we will use this links on next part of this post
-                    echo "<a href='edit.php?id={$id}'>Edit</a>";
-            echo "</tr>";
+				
+				
+				echo "<h1>{$name}</h1>";
+				
+					echo "<p><b><u>Large Description </u></b>- {$lrg_description}</p>";
+					
+					echo "<p><b><u>Price </u></b>- &pound;{$price}</p>";
+					
+					echo "<p><b><u>Staff Member </u></b>- {$staffMember}</p>";
         }
   
-    //end table
-    echo "</table>";
-  
-}
-  
+  }
 //if no records found
 else{
     echo "No records found.";

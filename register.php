@@ -65,7 +65,7 @@ alert( "Enter email." );
 return false;
 }
 }
-	</script> 
+	</script>
 	</head>
 	<body>
 
@@ -77,23 +77,29 @@ return false;
   </div>
     </div>
 <div class="container">
-      <div class="row">
-    <div id="bar_7" class="12 columns">
-          <div id="bar_inside2">
-        <div id="inside_bar2">
-              <form class="honours-login-form" method="POST" action="register.php"  id="register_form" name="reg">
-					<div id="honours-register-form-container">
-						<input type="text" name="name" placeholder="Full Name" required><br>
-						<input type="text" name="username" placeholder="Username" required><br>
-						<input type="text" name="email" placeholder="Email" id="email" required><br>
-						<input type="password" name="password" placeholder="Password" required><br>
-                        <input type="hidden" name="value" value="m"><br><br>
-						<button type="submit" name="register_btn" onclick="return( submitregistration());" value="Register">Register</button>
-					</div>
-					<div id=""><a href="login.php">Already registered? Login here</a></div>
-					</form>
-					<br>
-				<?php
+<div class="row">
+      <div id="bar_7" class="12 columns">
+    <div id="bar_inside2">
+          <div id="inside_bar2">
+        <form class="honours-login-form" method="POST" action="register.php"  id="register_form" name="reg">
+              <div id="honours-register-form-container">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <br>
+            <input type="text" name="username" placeholder="Username" required>
+            <br>
+            <input type="text" name="email" placeholder="Email" id="email" required>
+            <br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <input type="hidden" name="value" value="m">
+            <br>
+            <br>
+            <button type="submit" name="register_btn" onclick="return( submitregistration());" value="Register">Register</button>
+          </div>
+              <div id=""><a href="login.php">Already registered? Login here</a></div>
+            </form>
+        <br>
+        <?php
 				include_once 'include/functions.php';
 				$user = new GymUser();
 				// Checking for user logged in or not
@@ -113,14 +119,9 @@ return false;
 					}
 				}
 				?>
-				
-				
-				
-            </div>
       </div>
         </div>
-
-    
+  </div>
     </div>
 
 <!-- End Document

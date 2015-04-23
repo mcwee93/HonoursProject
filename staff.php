@@ -151,11 +151,11 @@ return false;
   </div>
     </div>
 <div class="container">
-      <div class="row">
-    <div id="bar_4" class="four columns">
-          <div id="bar_inside">
-        <div id="inside_bar">
-              <?php
+<div class="row">
+<div id="bar_4" class="four columns">
+      <div id="bar_inside">
+    <div id="inside_bar">
+          <?php
 		$query = "SELECT id, name, role, email, image FROM staff WHERE id = 4";
 		$honours = $connection->prepare( $query );
 		$honours->execute();
@@ -175,13 +175,13 @@ return false;
 		echo "No records found.";
 	}
 ?>
-            </div>
-      </div>
         </div>
-    <div id="bar_5" class="four columns">
-    <div id="bar_inside">
-        <div id="inside_bar">
-              <?php
+  </div>
+    </div>
+<div id="bar_5" class="four columns">
+      <div id="bar_inside">
+    <div id="inside_bar">
+          <?php
 		$query = "SELECT id, name, role, email, image FROM staff WHERE id = 5";
 		$honours = $connection->prepare( $query );
 		$honours->execute();
@@ -201,28 +201,38 @@ return false;
 		echo "No records found.";
 	}
 ?>
-            </div>
-      </div>
+        </div>
+  </div>
     </div>
-    <div id="bar_6" class="four columns">
-          <div id="bar_inside">
-        <div id="inside_bar">
-              <div id="honours-container">
-            <div id="honours-main-body">
-					<form class="honours-login-form" method="POST" action="register.php"  id="register_form" name="reg">
-					<div id="honours-index-list-container">
-						<h4>Hello <?php $user->get_fullname($_SESSION['id']);?></h4>
-						<li class="honours-index-li"><a href="login.php"><div id="honours-index-list-links">Home</div></a></li>
-						<li class="honours-index-li"><a href="test.php"><div id="honours-index-list-links">Profile</div></a></li>
-						<li class="honours-index-li"><a href="booking.php"><div id="honours-index-list-links">Book a Facility</div></a></li>
-					</div>
-					</form>
-					<br>
-					<div id="honours-register-button"><a href="?user=logout">log out</a></div>
-  
-     
-              
-            </div>
+<div id="bar_6" class="four columns">
+<div id="bar_inside">
+      <div id="inside_bar">
+    <div id="honours-container">
+          <div id="honours-main-body">
+        <form class="honours-login-form" method="POST" action="register.php"  id="register_form" name="reg">
+              <div id="honours-index-list-container">
+            <h4>Hello
+                  <?php $user->get_fullname($_SESSION['id']);?>
+                </h4>
+            <li class="honours-index-li"><a href="login.php">
+              <div id="honours-index-list-links">Home</div>
+              </a></li>
+            <li class="honours-index-li"><a href="profile.php">
+              <div id="honours-index-list-links">Profile</div>
+              </a></li>
+            <li class="honours-index-li"><a href="booking.php">
+              <div id="honours-index-list-links">Book a Facility</div>
+              </a></li>
+            <li class="honours-index-li"><a href="contact.php">
+              <div id="honours-index-list-links">Contact Us</div>
+              </a></li>
+            <li class="honours-index-li"><a href="login_downloadapp.php">
+              <div id="honours-index-list-links">Downlaod App</div>
+              </a></li>
+          </div>
+            </form>
+        <div id="honours-register-button"><a href="?user=logout">log out</a></div>
+      </div>
         </div>
   </div>
     </div>
