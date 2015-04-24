@@ -20,6 +20,21 @@ public function register_user($name, $username, $password, $email, $value)
 		return FALSE;
 		}
     }
+	public function register_admin($role, $user_name, $user_password) 
+{
+        $user_password = md5($user_password);		
+		$sql_ = mysql_query("SELECT id from admin WHERE role = '$role' or user_name = '$user_name'");
+        $no_rows = mysql_num_rows($sql_);
+		if ($no_rows == 0) 
+		{
+        $result = mysql_query("INSERT INTO admin(role, user_name, user_password) values ('$role','$user_name','$user_password')") or die(mysql_error());
+        return $result;
+		}
+		else
+		{
+		return FALSE;
+		}
+    }
    public function check_login($emailusername, $password) 
 	{
         $password = md5($password);	

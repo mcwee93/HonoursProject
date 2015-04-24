@@ -1,29 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-	#contenair{
-		height: 100%;
-		width: 100%;
-		
-	}
-	#r{
-		margin-top: 5%;
-		margin-bottom: 5%;
-		
-		height:95%;
-		
-		background-color: #b7bcbd;
-		
-	}
-	
-	</style>
-	
-
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Welcome Admin</title></head>
 <body>
-<div id="contenair">
-	<div id="r" >
 	
 	<?php 
 	include('../included/db_con.php');
@@ -35,7 +15,7 @@
   
                    if (empty($username) || empty($password))
                    {
-                      $error = 'Hey All fields are required!!';
+                      $error = 'All fields are required! Please fill out any missing areas';
                     }
                      
 					 else {  
@@ -47,7 +27,7 @@
 					if(mysql_fetch_array($result)){
 				 $_SESSION['logged_in']='true';
 				 $_SESSION['username']=$username;
-					 header('Location:adminpanal.php');
+					 header('Location:adminpanel.php');
 					 exit();
 					 } else {
 					 $error='Incorrect details !!';
@@ -57,7 +37,7 @@
   
   ?>
 	<form action="index.php" method="POST">
-	<h2 align="center" id="h"><u><i>Login Here........</i></u></h2>
+	<h2 align="center" id="h"><u><i>Welcome Admin</i></u></h2>
         <table align="center">
 		<tr> <?php  if (isset($error)) {?>
            <small style="color:#aa0000;"><?php echo $error; ?>
@@ -80,9 +60,6 @@
 			
        </table>
 		</form>
-		
-		
-	</div>
-</div>
+	
 </body>
 </html>

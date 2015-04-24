@@ -2,16 +2,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title></head>
+<title>Welcome Admin</title></head>
 
 <body>
  
-	  <h1>welcome admin</h1>
+	  <h1>welcome admin</h1><h3>Todays date is <?php echo date('Y-m-d'); ?></h3>
 	  Choose option from Below to take action!!!!
 	  Create new Booking click <a href="../booking.php"> Here</a>
 	  <?php
 	  include('../included/db_con.php');
-	  $sql="select * from bookingdetail";
+	  $sql="select * from bookingdetail ORDER BY booking_date asc";
 	  $row=mysql_query($sql) or die (mysql_error($con));
 	 
 	  ?><table border="1">
@@ -45,7 +45,9 @@
 	  
 	  ?>
 	  </table>
-	  
+	  <br>
+                  <br>
+                  <div><a href="adminpanel.php">Back</a></div>
 	  </div>
 </body>
 </html>
