@@ -18,6 +18,8 @@ if(isset($_GET['user']) && ($_GET['user']=='logout')){
 <li><a href="userbooking.php">User Booking List</a></li>
 <li><a href="registeredusers.php">Registered Users</a></li>
 <li><a href="addadmin.php">Add an Admin</a></li>
+<li><a href="facilities.php">Facilities</a></li>
 <li><a href="?user=logout">Log Out</a></li>
+
 </body>
 </html>

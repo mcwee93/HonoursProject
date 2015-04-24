@@ -13,15 +13,16 @@ include_once '../include/functions.php';
 <?php 
 if($_POST){
     try{
-        $query = "update users
-                    set id  = :id, name = :name, username = :username, email = :email, password  = :password
+        $query = "update facilities
+                    set id  = :id, name = :name, description = :description, lrg_description = :lrg_description, staffMember  = :staffMember, price  = :price
                     where id = :id";
         $honours = $connection->prepare($query);
 
         $honours->bindParam(':name', $_POST['name']);
-        $honours->bindParam(':username', $_POST['username']);
-        $honours->bindParam(':email', $_POST['email']);
-        $honours->bindParam(':password', $_POST['password']);
+        $honours->bindParam(':description', $_POST['description']);
+        $honours->bindParam(':lrg_description', $_POST['lrg_description']);
+        $honours->bindParam(':staffMember', $_POST['staffMember']);
+        $honours->bindParam(':price', $_POST['price']);
         $honours->bindParam(':id', $_POST['id']);
 
         if($honours->execute()){
@@ -36,7 +37,7 @@ if($_POST){
 }
 try {
   
-    $query = "select id, name, username, email, password from users where id = ? limit 0,1";
+    $query = "select id, name, description, lrg_description, staffMember, price from facilities where id = ? limit 0,1";
     $honours = $connection->prepare( $query );
     $honours->bindParam(1, $_REQUEST['id']);
     $honours->execute();
@@ -44,9 +45,10 @@ try {
     $row = $honours->fetch(PDO::FETCH_ASSOC);
     $id = $row['id'];
     $name = $row['name'];
-    $username = $row['username'];
-    $email = $row['email'];
-    $password = $row['password'];
+    $description = $row['description'];
+    $lrg_description = $row['lrg_description'];
+    $staffMember = $row['staffMember'];
+    $price= $row['price'];
   
 }catch(PDOException $exception){ 
     echo "Error: " . $exception->getMessage();
@@ -58,8 +60,7 @@ if($action=='deleted'){
 ?>
             <form method="POST" action="#"  id="register_form" name="reg">
 
-                  <h1>
-                <?php echo $username;  ?>'s profile</h1>
+                 
                   <table>
 				   <tr>
                       <td>id</td>
@@ -74,32 +75,39 @@ if($action=='deleted'){
                       <td><input type='text' name='name' value='<?php echo $name;  ?>' /></td>
                     </tr>
                 <tr>
-                      <td>username</td>
+                      <td>description</td>
                     </tr>
                 <tr>
-                      <td><input type='text' name='username' value='<?php echo $username;  ?>' /></td>
+                      <td><textarea name='description' value='' /><?php echo $description;  ?></textarea></td>
                     </tr>
                 <tr>
-                      <td>email</td>
+                      <td>large description</td>
                     </tr>
                 <tr>
-                      <td><input type='text' name='email'  value='<?php echo $email;  ?>' /></td>
+                      <td><textarea name='lrg_description'  value='' /><?php echo $lrg_description;  ?></textarea></td>
                     </tr>
                 <tr>
-                      <td>Password</td>
+                      <td>staff member</td>
                     </tr>
                 <tr>
-                      <td><input type='password' name='password'  value='<?php echo $password;  ?>' /></td>
+                      <td><input type='text' name='staffMember'  value='<?php echo $staffMember;  ?>' /></td>
                         </td>
-                    <tr>
-                      <td>
-                        <input type='submit' value='Edit' /></td>
+                    </tr>
+				<tr>
+				<td>staff member</td>
+				</tr>
+				<tr>
+                      <td><input type='text' name='price'  value='<?php echo $price;  ?>' /></td>
+                        </td>
+				</tr>
+						<tr>
+                        <td><input type='submit' value='Edit' /></td>
                     </tr>
               </table>
                  
                   <br>
                   <br>
-                  <div><a href="registeredusers.php">Back</a></div>
+                  <div><a href="facilities.php">Back</a></div>
                 </form>
 
               <br>
